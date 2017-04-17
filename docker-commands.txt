@@ -2,7 +2,11 @@ RUN A CONTAINER
 =====================================================================
 > docker run -d -p 8888:80 --name container-name httpd:2.4
                                                 [image name]
-                                                
+
+MOUNT A VOLUME
+=====================================================================
+> docker run -d -p 9999:80 --name my-web -v /home/ariel/Code/prueba:/usr/local/apache2/htdocs httpd:2.4
+
 LIST CONTAINERS
 =====================================================================
 > docker ps (active containers)
