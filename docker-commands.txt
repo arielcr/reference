@@ -1,0 +1,18 @@
+RUN A CONTAINER
+=====================================================================
+> docker run -d -p 8888:80 --name container-name httpd:2.4
+                                                [image name]
+                                                
+LIST CONTAINERS
+=====================================================================
+> docker ps (active containers)
+> docker ps -a (inactive containers)
+
+GO INSIDE CONTAINER
+=====================================================================
+> docker exec -it container-name /bin/bash
+
+BUILD A DOCKER IMAGE
+=====================================================================
+> docker image build --tag image-name:version .
+
